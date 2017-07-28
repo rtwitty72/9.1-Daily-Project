@@ -9,20 +9,22 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Please enter first number?");
-        Double firstNum = Double.parseDouble(scanner.nextLine());
-        System.out.print(firstNum);
 
-        System.out.print("Please enter second number?");
+            System.out.print("Please enter first number?");
+            Double firstNum = Double.parseDouble(scanner.nextLine());
+            System.out.print(firstNum);
 
-        Double secondNum = Double.parseDouble(scanner.nextLine());
-        System.out.print(secondNum);
-        Double sumOfNumbers = firstNum + secondNum;
+            System.out.print("Please enter second number?");
 
-        showResults(firstNum, secondNum);
-    }
+            Double secondNum = Double.parseDouble(scanner.nextLine());
+            System.out.print(secondNum);
+            Double sumOfNumbers = firstNum + secondNum;
 
-    public static void showResults (double firstNum, double secondNum) {
+            showResults(firstNum, secondNum);
+        }
+
+
+    public static void showResults(double firstNum, double secondNum) {
 
         double sumOfNumbers = firstNum + secondNum;
         System.out.println("The sum of your numbers is " + sumOfNumbers);
